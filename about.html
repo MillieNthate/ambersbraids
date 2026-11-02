@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Amber's Braids | Our Story & Price List | Garankuwa</title>
+    <meta name="description" content="Amber's Braids in Garankuwa Zone 21, Pretoria. Affordable protective styles, knotless braids from R180. Book on Whatsapp 066 415 6356.">
+    <meta name="keywords" content="braids Pretoria, Garankuwa braids, knotless braids, Island twist, Goddess Braids, Natural Hair Treatment, Twisted Locks, Amber's Braids, affordable braids R180">
+    <meta name="author" content="Koketso Khunoana">
+    <link rel="stylesheet" href="css_assets/style.css"> 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            background: #ffd6e0;
+        }
+        .header {
+            background: #f8c8dc;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 30px;
+        }
+        .header-left {
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 1.2;
+            color: #6b3a4a;
+        }
+        .header-center {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo {
+            height: 120px;
+        }
+        .nav {
+            display: flex;
+            gap: 8px;
+        }
+        .nav a {
+            background: #fffde7;
+            color: #6b3a4a;
+            text-decoration: none;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            border: 1px solid #e6dcc3;
+        }
+        .nav a.active {
+            background: #fff;
+            border: 1.5px solid #e6dcc3;
+        }
+        .main {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 45px 20px;
+        }
+        .main h1 {
+            font-size: 22px;
+            letter-spacing: 3px;
+            color: #6b3a4a;
+            margin-bottom: 25px;
+        }
+        .main p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #6b3a4a;
+            max-width: 700px;
+            margin: 0 auto 25px;
+        }
+        .price-box {
+            max-width: 650px;
+            margin: 30px auto 0;
+        }
+        .price-box img {
+            width: 100%;
+            border-radius: 12px;
+            display: block;
+        }
+    </style>
+    <style>
+        .accordion { background-color: #f8c8dc; cursor:pointer; padding:1rem; width: 100%; border: none; text-align: left; font-size: 1.1rem; margin-top:0.5rem; border-radius:8px; }
+        .panel { display: none; padding: 1rem; background: white; }
+        .panel.active { display: block; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <br>Amber's Braids
+        </div>
+        <div class="header-center">
+            <img src="images/the-logo.jpg" alt="Logo" class="logo">
+            <div class="nav">
+                <a href="index.html">Home</a>
+                <a href="about.html" class="active">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="enquiry.html">Enquiry</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div style="width: 120px;"></div>
+    </div>
+
+    <!--About us information-->
+
+    <div class="main">
+        <h1>ABOUT US</h1>
+        <p>Amber's Braids - Pretoria's Finest</p>
+        <p>
+            Welcome to Amber's Braids! Based in Pretoria, we specialize in 
+            beautiful, neat and long-lasting braids. We make every client feel 
+            confident and beautiful. Quality work, affordable prices, and love 
+            in every braid!
+        </p>
+      <button class="accordion" onclick="toggleAccordion('history')">Our History</button>
+      <div id="history" class="panel">
+        <p>Amber's Braids was founded in 2023 by Amber Koketso, a passionate hairstylist with a love for braiding in Pretoria.</p>
+    </div>
+
+    <button class="accordion" onclick="toggleAccordion('mission')">Our Mission</button>
+    <div id="mission" class="panel">
+        <p>At Amber's Braids, our mission is to empower individuals through the art of braiding, providing them with beautiful, durable styles that enhance their natural features and boost their confidence.</p>
+    </div>
+
+    <button class="accordion" onclick="toggleAccordion('price')">Our Price List</button>
+    <div id="price" class="panel">
+        <div class="price-box">
+            <img src="images/the-about.jpg" alt="Price List" style="width:100%; max-width:400px;">
+        </div>
+    </div>
+
+    <script>
+        function toggleAccordion(id){
+            let panel = document.getElementById(id);
+            panel.classList.toggle("active");
+        }
+    </script>
+    
+<footer style="text-align: center; padding: 12px 30px; background-color: #f8c8dc; margin-top: 30px">
+    <p style="margin: 5px 0;">&copy; 2024 Amber's Braids. All rights reserved.</p>
+    <p style="margin-top: 5px 0;">Email: koketsokhunoana@gmail.com | Phone: 066 415 6356</p>
+</footer>
+
+</body>
+</html>
