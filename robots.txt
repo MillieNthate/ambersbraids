@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ambersbraids.co.za/sitemap.xml
