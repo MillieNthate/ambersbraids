@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Braiding Services from R180 | Knotless Braids, Goddess Braids, Island Twist, Twisted Locks, Natural Hair Treatment | Amber's Braids</title>
+    <meta name="description" content="Amber's Braids in Garankuwa Zone 21, Pretoria. Affordable protective styles, knotless braids from R180. Book on Whatsapp 066 415 6356.">
+    <meta name="keywords" content="braids Pretoria, Garankuwa braids, knotless braids, Island twist, Goddess Braids, Natural Hair Treatment, Twisted Locks, Amber's Braids, affordable braids R180">
+    <meta name="author" content="Koketso Khunoana">
+    <link rel="stylesheet" href="css_assets/style.css"> 
+</head>
+<body>
+    <header>
+        <h1>Amber's Braids</h1>
+        <img src="images/the-logo.jpg" alt="logo" width="120">
+    </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+<!--Services listed are services offered-->
+
+        <main>
+            <h2>Our Services</h2>
+            <input type="text" id="searchInput" onkeyup="searchProducts()" placeholder="Search styles..." >
+            <div class="shop-card">
+            <h3>Knotless Braids</h3>
+            <p>Our Knotless braids are perfect for those looking for a natural and comfortable style. They are lightweight and reduce tension on the scalp. From R180</p>
+            <img src="images/knotless.jpg" alt="Individual braids styled without knots at the roots, showcasing a natural, lightweight braiding technique designed to reduce scalp tension. The hairstyle presents a relaxed, comfortable aesthetic suitable for everyday wear." width="300">
+            </div>
+            <div class="shop-card">
+            <h3>Goddess Braids</h3>
+            <p>Goddess braids are a stylish and elegant with their curls and are a option for any occasion. They are versatile and can be worn in various styles. From R180</p>
+            <img src="images/goddess.jpg" alt="Thick, glossy braids arranged in an updo with elegant curls cascading at the ends. The style conveys sophistication and polish, perfect for formal occasions or special events." width="300">
+            </div>
+            <div class="shop-card">
+            <h3>Island Twist</h3>
+            <p>Island twist is a popular style that combines the beauty of twists with the comfort of braids. It is a great option for those looking for a unique and attractive look. From R180</p>
+            <img src="images/the-island.jpg" alt="Island twist hairstyle combining twisted sections with braided elements, showcasing a unique texture and decorative appeal perfect for any occasion" width="300">
+            </div>
+            <div class="shop-card">
+            <h3>Twisted Locks</h3>
+            <p>Twisted locks are a trendy and fashionable style that is perfect for those looking for a bold and edgy look. They are easy to maintain and can be styled in various ways. From R200</p>
+            <img src="images/twisted.jpg" alt="Bold and edgy twisted locks hairstyle with defined spiral twists throughout, creating a fashionable and easy-to-maintain look with strong visual impact" width="300">
+            </div>
+            <h3>Additional Services</h3>
+            <ul>
+                <li>Hair Care Consultation</li>
+                <li>Hair Extensions</li>
+                <li>Hair Treatments</li>
+            </ul>
+            <div id="lightbox" onclick="closeLightbox()" style="display:none;" position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:1000;">
+                <img id="lightbox-img" style="max-width: 90%; max-height: 90%;">
+            </div>
+        </main>
+
+     <footer>
+    <p>&copy; 2026 Amber's Braids. All rights reserved.</p>
+    <p>Email: koketsokhunoana@gmail.com | Phone: 066 415 6356</p>
+  </footer>
+
+    <script src="js_assets/script.js"></script> 
+    <script>
+        function searchProducts(){
+            let input = document.getElementById("searchInput").value.toLowerCase();
+            let cards = document.querySelectorAll(".shop-card"); 
+            cards.forEach(card =>{
+                let title = card.querySelector("h3").textContent.toLowerCase();
+                if(title.includes(input)){
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+            });
+        }
+        function openLightbox(s){ document.getElementById("lightbox").style.display = "flex"; document.getElementById("lightbox-img").src = s; }
+        function closeLightbox(){ document.getElementById("lightbox").style.display = "none"; }
+        </script>
+</body>
+</html>
